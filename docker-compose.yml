@@ -2,6 +2,21 @@ version: '3.8'
 
 services:
 
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: creonit_backend
+    restart: always
+    volumes:
+      - creonit_static:/creonit-test/static/
+    ports:
+      - '${APP_PORT}:8000'
+    depends_on:
+      - db
+    env_file:
+      - .env
+
   db:
     container_name: creonit_db
     image: postgres:14.6-alpine
@@ -20,6 +35,6 @@ services:
       - creonit_data:/var/lib/postgresql/data
 
 
-
 volumes:
   creonit_data:
+  creonit_static:

@@ -1,0 +1,58 @@
+[
+{
+  "model": "api.urlmodel",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 1,
+    "created_at": "2024-04-22T15:15:56.183Z",
+    "updated_at": "2024-04-22T15:15:56.185Z",
+    "name": "Тест",
+    "slug": "tst",
+    "url": "test/"
+  }
+},
+{
+  "model": "api.urlmodel",
+  "pk": 2,
+  "fields": {
+    "path": "00010001",
+    "depth": 2,
+    "numchild": 0,
+    "created_at": "2024-04-23T06:06:37.099Z",
+    "updated_at": "2024-04-23T06:06:37.103Z",
+    "name": "child_test",
+    "slug": "child",
+    "url": "test/child/"
+  }
+},
+{
+  "model": "api.urlmodel",
+  "pk": 4,
+  "fields": {
+    "path": "0002",
+    "depth": 1,
+    "numchild": 1,
+    "created_at": "2024-04-23T07:23:25.756Z",
+    "updated_at": "2024-04-23T07:23:25.758Z",
+    "name": "root",
+    "slug": "root",
+    "url": "root/"
+  }
+},
+{
+  "model": "api.urlmodel",
+  "pk": 5,
+  "fields": {
+    "path": "00020001",
+    "depth": 2,
+    "numchild": 0,
+    "created_at": "2024-04-23T07:24:05.686Z",
+    "updated_at": "2024-04-23T08:14:18.984Z",
+    "name": "root-child",
+    "slug": "root-child",
+    "url": "root/child/"
+  }
+}
+]
