@@ -5,5 +5,5 @@ from api import views
 app_name = 'api'
 
 urlpatterns = [
-    path('v1/test/', views.test, name='test'),
+    path('v1/pages/', views.ListUrlView.as_view(), name='list-url-view'),
 ]
