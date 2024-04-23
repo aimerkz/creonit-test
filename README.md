@@ -9,3 +9,7 @@ $ bash run.sh
 ```
 
 Документация к API: [Creonit API](http://127.0.0.1:8000/api/docs/)<br>
+
+Админка: [Creonit Admin](http://127.0.0.1:8000/admin)<br>
+Логин - admin \
+Пароль - admin
