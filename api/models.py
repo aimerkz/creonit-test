@@ -12,7 +12,10 @@ class BaseModel(MP_Node):
         abstract = True
 
 
-class Parent(BaseModel):
+class UrlModel(BaseModel):
     name = models.CharField(verbose_name='Название страницы', max_length=99)
-    slug = models.SlugField(verbose_name='Фрагмент url-адреса', max_length=15)
-    url = models.CharField(verbose_name='Полный url-адрес', max_length=199)
+    slug = models.SlugField(verbose_name='Фрагмент url-адреса', max_length=15, unique=True)
+    url = models.CharField(verbose_name='Полный url-адрес', max_length=199, unique=True)
+
+    def __str__(self):
+        return f'{self.name}: {self.url}'
