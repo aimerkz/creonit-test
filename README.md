@@ -8,4 +8,4 @@ $ cd creonit-test
 $ docker-compose up -d
 ```
 
-Документация к API: [Wellbex API](http://127.0.0.1:8000/api/docs/)<br>
+Документация к API: [Creonit API](http://127.0.0.1:8000/api/docs/)<br>
