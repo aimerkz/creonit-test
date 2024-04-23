@@ -11,9 +11,9 @@ python = "^3.10"
 djangorestframework = "^3.15.1"
 drf-spectacular = "^0.27.2"
 psycopg2-binary = "^2.9.9"
-envparse = "^0.2.0"
 django-treebeard = "^4.7.1"
 django-filter = "^24.2"
+envparse = "^0.2.0"
 
 
 [build-system]
